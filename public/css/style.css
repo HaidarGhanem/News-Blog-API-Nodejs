@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
+
+:root{
+    --font-family : 'Poppins', sans-serif;
+    --color : #2b8345;
+}
+
+body{
+    margin: 0;
+    background-color: #f6f6f6;
+}
+
+.container{
+    width:100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between ;
+    padding: 10px;
+    background-color: var(--color);
+    align-items: center;
+}
+
+.container__logo{
+    font-family: var(--font-family);
+    color: white;
+    padding: auto;
+}
+
+.container__search{
+    padding: auto;
+    font-family: var(--font-family);
+    color: white;
+}
+
+input[type=text]{
+    padding: 6px;
+    border: 1px solid white;
+    background: none;
+    color: white;
+    border-radius: 20px;
+    width: 300px;
+}
+
+input[type=submit]{
+    border-radius: 20px;
+    border-color: white;
+    background-color: white;
+    color: var(--color);
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+.wrapper{
+    padding: 0 1rem
+}
+
+.news{
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(350px,1fr));
+    grid-gap: 2rem;
+}
+
+.news__card{
+    width: 400px;
+    height: 300px;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.news__card:hover{
+    box-shadow: 0 3px 3px rgba(0,0,0,0.16), 0 3px 3px rgba(0,0,0,0.23);
+}
+
+.news__card__img{
+    width: inherit;
+    border-radius: 10px;
+}
+
+.news__card__title{
+    font-family: var(--font-family);
+    font-size: 16px;
+    color: var(--color);
+}
+
+.news-post{
+    font-family: var(--font-family);
+    align-items: center;
+    background-color: white;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.news-post-title{
+    font-size: 44px;
+    color: var(--color);
+}
+
+.back{
+    background-color: var(--color);
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+    border: var(--color);
+    border-radius: 20px;
+
+}
